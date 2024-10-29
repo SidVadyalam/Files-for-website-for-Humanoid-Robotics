@@ -445,3 +445,11 @@ function locomotive() {
       scroller:`#main`
     }
   })
+
+
+function onAnimationComplete() {
+        window.parent.postMessage("animationComplete", "*");
+    }
+
+    // Call this function at the end of your animation, or at any desired point
+onAnimationComplete();
